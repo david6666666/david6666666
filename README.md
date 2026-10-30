@@ -1,50 +1,47 @@
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=24&amp;duration=3000&amp;pause=800&amp;color=2F81F7&amp;center=true&amp;vCenter=true&amp;width=620&amp;lines=Building+efficient+multimodal+inference;Text+%C2%B7+Image+%C2%B7+Audio+%C2%B7+Video;Profile+the+bottleneck.+Verify+the+gain." alt="Building efficient multimodal inference — text, image, audio and video" />
+
+**WeiQing Chen** · **vLLM-Omni Committer** · 专注多模态与大模型推理：模型接入、分布式服务、GPU/NPU 性能优化，以及可复现的基准与质量验证。
+
+</div>
+
+## 🔭 Focus
+
+- **多模态推理**：在 vLLM-Omni 中接入与优化图像、音频、视频等模型，打通模型加载与推理服务
+- **性能优化**：从 profiling 定位瓶颈，优化 GPU kernel、通信与执行流程，同时验证输出质量
+- **分布式服务**：关注专家并行负载均衡、异步专家重排，以及多模态投机解码
+- **Agent 辅助优化**：通过 InferRSI 组织基准对比、质量检查与实验记录，让优化过程可追溯、经验可复用
+
+## 🧩 Featured Projects
+
+| 项目 | 说明 | 技术 |
+| --- | --- | --- |
+| [vLLM-Omni](https://github.com/vllm-project/vllm-omni) | Committer；面向文本、图像、音频与视频模型的高效推理框架，参与模型接入、性能优化与质量修复 | PyTorch · Diffusion · GPU/NPU |
+| [InferRSI](https://github.com/InferMatrixLab/InferRSI) | 参与构建面向 coding agent 的推理优化工作台：组织受控基准对比、质量检查、实验报告与可复用调优知识 | Python · Benchmarking · Agent Skills |
+| [AgentInfer](https://github.com/openJiuwen-ai/agent-infer) | 面向 Agent 工作负载的路由、调度与缓存框架；参与 InferRSI 源码集成 | vLLM · KV Cache · Agent Workloads |
+
+## 🌱 Open Source
+
+vLLM-Omni Committer，参与 vLLM 与 AgentInfer 开源协作。部分已合并贡献：
+
+- **[vLLM-Omni #8739](https://github.com/vllm-project/vllm-omni/pull/8739)** — 优化 Qwen-Image-2.1-Turbo 在 NVIDIA B300 上的 BF16 推理；[实验与复现记录](https://github.com/InferMatrixLab/InferRSI/blob/main/docs/qwen-image-2.1-turbo-b300.md)
+- **[vLLM-Omni #7610](https://github.com/vllm-project/vllm-omni/pull/7610)** — 支持直接加载 FastH3 8-Step V2 checkpoint
+- **[vLLM #22179](https://github.com/vllm-project/vllm/pull/22179)** — 优化 EPLB 的异步专家重排
+- **[vLLM #22872](https://github.com/vllm-project/vllm/pull/22872)** — 为 Qwen2.5-VL 接入 EAGLE / EAGLE3 多模态投机解码
+- **[AgentInfer #51](https://github.com/openJiuwen-ai/agent-infer/pull/51)** — 集成完整 InferRSI 源码与工作台
+
+## 🛠 Tech Stack
+
 <p align="center">
-  <img src="./assets/header.svg" alt="WeiQing Chen — building efficient inference for multimodal AI" width="100%">
+  <img src="https://skillicons.dev/icons?i=python,pytorch,kubernetes,git,linux&amp;perline=12" alt="Python, PyTorch, Kubernetes, Git, Linux" />
 </p>
 
-<h1 align="center">WeiQing Chen</h1>
+**Inference**：vLLM · vLLM-Omni · PyTorch　**Infrastructure**：CUDA · Ascend NPU · Ray · Kubernetes
 
-<p align="center">
-  <strong>vLLM-Omni Committer · LLM &amp; Multimodal Inference · Open Source</strong>
-</p>
+## 🐍 Contributions
 
-<p align="center">
-  <a href="https://github.com/david6666666">GitHub</a> ·
-  <a href="https://www.linkedin.com/in/weiqing-chen-7b617123b/">LinkedIn</a> ·
-  <a href="mailto:530634352@qq.com">Email</a>
-</p>
-
-I work on **efficient inference for text, image, audio, and video models** — from model integration and distributed serving to profiling, kernel optimization, and reproducible benchmarks.
-
-- **Open source:** committer at [vLLM-Omni](https://github.com/vllm-project/vllm-omni) and contributor to [vLLM](https://github.com/vllm-project/vllm).
-- **Current focus:** diffusion inference, GPU/NPU performance, and inference optimization with coding agents.
-- **Engineering approach:** profile the bottleneck, measure the improvement, and verify output quality.
-
-### Selected contributions
-
-| Area | Work | Merged PR |
-| :--- | :--- | :--- |
-| Diffusion performance | Qwen-Image-2.1-Turbo BF16 inference optimization on NVIDIA B300 | [vLLM-Omni #8739](https://github.com/vllm-project/vllm-omni/pull/8739) |
-| Model integration | Direct FastH3 8-Step V2 checkpoint loading | [vLLM-Omni #7610](https://github.com/vllm-project/vllm-omni/pull/7610) |
-| Distributed inference | Asynchronous expert rearrangement for expert parallel load balancing | [vLLM #22179](https://github.com/vllm-project/vllm/pull/22179) |
-| Multimodal decoding | EAGLE / EAGLE3 support for Qwen2.5-VL | [vLLM #22872](https://github.com/vllm-project/vllm/pull/22872) |
-
-### Projects & tools
-
-| Project | What you'll find |
-| :--- | :--- |
-| [**vLLM-Omni**](https://github.com/vllm-project/vllm-omni) | Efficient inference and serving for models spanning text, image, audio, and video. |
-| [**InferRSI**](https://github.com/InferMatrixLab/InferRSI) | A CLI workbench for inference optimization with coding agents, controlled comparisons, quality checks, and reusable tuning knowledge. |
-| [**vllm-omni-skills**](https://github.com/david6666666/vllm-omni-skills) | AI assistant skills for model integration, serving, distributed inference, performance tuning, and code review. |
-
-**A measured example:** an [InferRSI Qwen-Image-2.1-Turbo campaign](https://github.com/InferMatrixLab/InferRSI/blob/main/docs/qwen-image-2.1-turbo-b300.md) recorded **30.60% lower HTTP end-to-end latency** (384.16 → 266.60 ms), with **44/44 pixel-identical outputs**. Scope: 4× NVIDIA B300, BF16, 1280×704, native 8 steps, warm repeated prompts; results are specific to that workload.
-
-### Stack & interests
-
-**Python · PyTorch · CUDA · Ascend NPU · vLLM · Ray · Kubernetes**
-
-Multimodal model serving · Diffusion acceleration · Distributed inference · Benchmarking & profiling · Agent-assisted optimization
-
----
-
-Interested in multimodal inference or a reproducible performance problem? [Start a conversation](https://github.com/david6666666/david6666666/issues) or [send an email](mailto:530634352@qq.com).
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/david6666666/david6666666/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/david6666666/david6666666/output/github-snake.svg" alt="Animated snake tracing david6666666's GitHub contributions" />
+</picture>
