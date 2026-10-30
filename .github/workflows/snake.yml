@@ -1,0 +1,50 @@
+name: Generate contribution snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Generate light and dark contribution animations
+        uses: Platane/snk@d8f6715049803e982ee5ff501b6b9b7d5deeb09b # v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+
+      - name: Publish animations with a signed-off commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh auth setup-git --hostname github.com
+          git init --initial-branch=output publish
+          cd publish
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git remote add origin "https://github.com/${GITHUB_REPOSITORY}.git"
+          if git ls-remote --exit-code --heads origin output > /dev/null; then
+            git fetch --depth=1 origin output
+            git checkout -B output FETCH_HEAD
+          fi
+          cp ../dist/github-snake.svg ../dist/github-snake-dark.svg .
+          git add -- github-snake.svg github-snake-dark.svg
+          if git diff --cached --quiet; then
+            echo 'Contribution animations are unchanged.'
+            exit 0
+          fi
+          git commit -s -m 'Update contribution snake'
+          git push origin HEAD:output
