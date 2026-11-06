@@ -18,8 +18,10 @@
 | 项目 | 说明 | 技术 |
 | --- | --- | --- |
 | [vLLM-Omni](https://github.com/vllm-project/vllm-omni) | Committer；面向文本、图像、音频与视频模型的高效推理框架，参与模型接入、性能优化与质量修复 | PyTorch · Diffusion · GPU/NPU |
+| [vLLM](https://github.com/vllm-project/vllm) | Contributor；面向大模型的高吞吐推理与服务引擎，参与 EPLB 异步专家重排和多模态投机解码 | PyTorch · Distributed Inference · CUDA |
 | [InferRSI](https://github.com/InferMatrixLab/InferRSI) | 参与构建面向 coding agent 的推理优化工作台：组织受控基准对比、质量检查、实验报告与可复用调优知识 | Python · Benchmarking · Agent Skills |
 | [AgentInfer](https://github.com/openJiuwen-ai/agent-infer) | 面向 Agent 工作负载的路由、调度与缓存框架；参与 InferRSI 源码集成 | vLLM · KV Cache · Agent Workloads |
+| [OpenDirector](https://github.com/ThinkFlowLab/OpenDirector) | 本地运行的 AI 视频创作工作台：对话生成、画布素材管理、媒体编辑与时间线 MP4 导出 | AI Agents · Video Generation · FFmpeg |
 
 ## 🌱 Open Source
 
