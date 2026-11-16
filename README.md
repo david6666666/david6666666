@@ -28,9 +28,9 @@
 | [afd-plugin](https://github.com/vllm-project/afd-plugin) | 面向 Attention-FFN 分离（AFD）的 vLLM 外部插件，探索 GPU 与 Ascend NPU 的分离部署（实验性） | vLLM · AFD · GPU/NPU |
 | [vLLM Router](https://github.com/vllm-project/router) | 面向大规模 vLLM 部署的轻量请求路由，支持负载均衡、缓存感知路由与 Prefill/Decode 分离 | Rust · Load Balancing · PD Disaggregation |
 | [vllm-rlt](https://github.com/InferMatrixLab/vllm-rlt) | 面向循环语言模型的独立推理与服务引擎，支持循环级连续批处理和 Stage/Loop 调度 | Recurrent LMs · Continuous Batching · Stage/Loop |
-| [InferRSI](https://github.com/InferMatrixLab/InferRSI) | 参与构建面向 coding agent 的推理优化工作台：组织受控基准对比、质量检查、实验报告与可复用调优知识 | Python · Benchmarking · Agent Skills |
-| [AgentInfer](https://github.com/openJiuwen-ai/agent-infer) | 面向 Agent 工作负载的路由、调度与缓存框架；参与 InferRSI 源码集成 | vLLM · KV Cache · Agent Workloads |
-| [OpenDirector](https://github.com/ThinkFlowLab/OpenDirector) | 本地运行的 AI 视频创作工作台：对话生成、画布素材管理、媒体编辑与时间线 MP4 导出 | AI Agents · Video Generation · FFmpeg |
+| [InferRSI](https://github.com/InferMatrixLab/InferRSI) | Maintainer；参与构建面向 coding agent 的推理优化工作台：组织受控基准对比、质量检查、实验报告与可复用调优知识 | Python · Benchmarking · Agent Skills |
+| [AgentInfer](https://github.com/openJiuwen-ai/agent-infer) | Committer；面向 Agent 工作负载的路由、调度与缓存框架；参与 InferRSI 源码集成 | vLLM · KV Cache · Agent Workloads |
+| [OpenDirector](https://github.com/ThinkFlowLab/OpenDirector) | Committer；本地运行的 AI 视频创作工作台：对话生成、画布素材管理、媒体编辑与时间线 MP4 导出 | AI Agents · Video Generation · FFmpeg |
 
 ## 🌱 Open Source
 
