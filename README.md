@@ -2,7 +2,12 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=24&amp;duration=3000&amp;pause=800&amp;color=2F81F7&amp;center=true&amp;vCenter=true&amp;width=620&amp;lines=Building+efficient+multimodal+inference;Text+%C2%B7+Image+%C2%B7+Audio+%C2%B7+Video;Profile+the+bottleneck.+Verify+the+gain." alt="Building efficient multimodal inference — text, image, audio and video" />
 
-**WeiQing Chen** · **vLLM-Omni Committer** · 专注多模态与大模型推理：模型接入、分布式服务、GPU/NPU 性能优化，以及可复现的基准与质量验证。
+**WeiQing Chen** · **vLLM-Omni Committer**
+
+**InferMatrix Team · Operations & Ecosystem Lead**<br>
+团队运营与生态发展负责人 · [Website](https://infermatrix.si/#)
+
+专注多模态与大模型推理：模型接入、分布式服务、GPU/NPU 性能优化，以及可复现的基准与质量验证。
 
 </div>
 
